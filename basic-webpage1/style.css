@@ -1,0 +1,135 @@
+body {
+    /* you can use a more complete font-family from VSCode as well */
+    background: yellowgreen;
+    font-family: arial, sans-serif;
+
+
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.header {
+    background-color: lightgreen;
+    padding: 1em;
+}
+
+.main {
+    background-color : lightseagreen;
+    padding: 1em;
+
+}
+/* side-bar  {
+    float : left;
+    width : 25%;
+} */
+content {
+    padding:1em;
+}   
+.footer {
+    background-color: lightgreen;
+    padding: 1em;
+}
+
+
+.city {
+    display:flex;
+    flex:1;
+}
+
+
+
+  .city-container{ 
+    border: green solid 2px;
+    display: flex;
+
+  } 
+ .city-image{
+    flex: 1;
+} 
+ .city-txt{
+    flex: 1;
+} 
+
+.img1 {
+    float: left;
+}
+
+
+ .img2 {
+    float: right;
+}
+
+     
+/* .historical-txt { 
+    float:left;
+ } */
+ .historical-wrap{
+     border: solid 1px pink;
+     margin-top: 10px;
+ }
+
+ 
+
+.historical-image img{
+    width: 100%;
+}
+.long img{
+    margin-right: 5px;
+}
+.historical-image{
+    width: 50%;
+    float: right;
+}
+.float-left{
+    float: left;
+}
+  .clearfix::after {  
+    content: "";
+    clear: both;
+    display: table;
+  } 
+ 
+  /* .historical-txt{
+      overflow: hidden;
+  }
+   */
+@media(min-width:960px){
+    body{
+        background: yellow;
+    }  
+    .float-left{
+        float:right;
+    }
+    .historical-container{
+        display: flex;
+    }
+    .historical-wrap{
+        border: solid 1px pink;
+        margin: 5px;
+    }
+
+
+
+    /* .city-container{
+        display: flex;
+    }
+    .historical-container{
+        display: flex;
+    }
+    */
+
+    /* .historical-image{
+        width: 50%;
+    } */
+    .historical-image img{
+        /* width: 100%; */
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+}
