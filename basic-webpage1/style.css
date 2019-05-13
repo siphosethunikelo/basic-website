@@ -1,19 +1,36 @@
 body {
     /* you can use a more complete font-family from VSCode as well */
     background: yellowgreen;
-    font-family: arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
 
 }
 
+.center-align {
+    text-align: center;
+}
+
 .container {
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
 .header {
     background-color: lightgreen;
     padding: 1em;
+    display: flex;
+    
+}
+
+.header-content {
+    flex: 1;
+}
+
+.header-content img{
+    width: 100%;
+}
+.header-content h1{
+    text-align: center;
 }
 
 .main {
@@ -35,10 +52,9 @@ content {
 
 
 .city {
-    display:flex;
-    flex:1;
-}
+    display:block;
 
+}
 
 
   .city-container{ 
@@ -49,8 +65,12 @@ content {
  .city-image{
     flex: 1;
 } 
+.city img{
+    width: 100%;
+} 
  .city-txt{
     flex: 1;
+    padding-left: 10px;
 } 
 
 .img1 {
@@ -63,18 +83,19 @@ content {
 }
 
      
-/* .historical-txt { 
-    float:left;
- } */
+ .Historical-text { 
+   padding: 10px;
+ } 
  .historical-wrap{
-     border: solid 1px pink;
      margin-top: 10px;
  }
 
- 
-
+ .historical h3{
+     font-family: Arial, Helvetica, sans-serif;
+ }
 .historical-image img{
     width: 100%;
+    margin: 25px 0px 0px -4px;
 }
 .long img{
     margin-right: 5px;
@@ -82,6 +103,7 @@ content {
 .historical-image{
     width: 50%;
     float: right;
+    padding-left: 10px;
 }
 .float-left{
     float: left;
@@ -96,7 +118,11 @@ content {
       overflow: hidden;
   }
    */
-@media(min-width:960px){
+@media(min-width:800px){
+    .container {
+        width: 90%;
+       
+    }
     body{
         background: yellow;
     }  
@@ -107,10 +133,14 @@ content {
         display: flex;
     }
     .historical-wrap{
-        border: solid 1px pink;
+    
         margin: 5px;
     }
 
+    .historical h3{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+    }
 
 
     /* .city-container{
@@ -132,4 +162,17 @@ content {
         clear: both;
         display: table;
       }
+
+      .header-content img{
+        width: 60%;
+    }
+
+    .city {
+        display:flex;
+        flex:1;
+    }
+
+    .city-image {
+        width: 50%;
+    }
 }
